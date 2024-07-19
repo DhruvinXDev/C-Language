@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+void main()
+{
+ double t = 1441981744; // total people
+ printf("Bharat Population For Year 2024 Is %lf. \n ", t);
+ double tlr = 85.95 ; // total literacy rate
+ double tl; // total literacy
+ tl= ((tlr*t)/100);
+ printf("Total Literacy For Year 2024 Is : %lf. \n "  ,tl);
+ double twp = 48.4 ; // total women %
+ double tw; //total women
+  tw= ((twp*t)/100);
+ printf("Total Women For Year 2024 Is : %lf. \n "  ,tw);
+ double tm ; // total male
+ tm = t - tw ;
+ printf("Total Male For Year 2024 Is : %lf. \n "  ,tm);
+ double lrm = 85.95; //  literacy rate for male
+ double lm ; // literacy for male
+ lm = ((lrm*tm)/100);
+ printf("Literacy Male For Year 2024 Is : %lf. \n "  ,lm);
+ double lrw = 62.84; // literacy rate for female
+ double lf ; // literacy for female
+ lf = ((lrw*tw)/100);
+ printf("Literacy Female For Year 2024 Is : %lf. \n "  ,lf);
+ double tim = tm - lm ;
+ double tiw = tw - lf ;
+ printf("\n");
+ printf("----------------------------------------------------- \n ");
+ printf("Total Illiterate Men For Year 2024 Is : %lf. \n " ,tim);
+ printf("Total Illiterate Women For Year 2024 Is : %lf. \n " ,tiw);
+ printf("\n");
+ printf("\n");
+ printf("\n");
+ printf("----------------------------------------------------- \n ");
+ printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
+}
