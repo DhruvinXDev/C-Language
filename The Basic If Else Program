@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void main()
+{
+    long r,s;
+    r=21000000; //raman total wealth
+    s=27000000; //suman total wealth
+
+    if(r>s)
+    {
+        printf("raman is more wealthier.");
+    }
+    else if(r==s)
+    {
+        printf("raman and suman is equally welthier.");
+    }
+    else(r<s);
+    {
+        printf("suman is more wealthier.");
+    }
+}
