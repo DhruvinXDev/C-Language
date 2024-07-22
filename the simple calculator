@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+void main()
+{
+    int x,y;
+    char o;
+    printf("enter the first value :");
+    scanf("%d",&x);
+    printf("enter the second value :");
+    scanf("%d",&y);
+    fflush(stdin);
+    printf("enter one operator from (+,-,/,*) :");
+    scanf("%c",&o);
+
+    switch (o)
+    {
+    case '+':
+        printf("%d \n ", x+y);
+        break;
+    case '-':
+        printf("%d \n ", x-y);
+        break;
+    case '*':
+        printf("%d \n ",x*y);
+        break;
+
+    case '/':
+        printf("%d \n ",x/y);
+        break;
+    default :
+        printf("invalid input ");
+
+    }
+}
