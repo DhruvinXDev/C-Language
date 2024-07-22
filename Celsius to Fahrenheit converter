@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+void main()
+{
+
+   double x;
+   printf("enter celsius tamperature :");
+   scanf("%lf",&x);
+   double y;
+   y = (x*(9.0/5));
+   double z;
+   z = y + 32 ;
+   printf(" the fahrenheit tamperature is : %lf .",z);
+
+}
