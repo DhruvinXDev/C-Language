@@ -18,4 +18,6 @@ void main()
     {
         printf("suman is more wealthier.");
     }
+printf("----------------------------------------------------- \n ");
+ printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
 }
