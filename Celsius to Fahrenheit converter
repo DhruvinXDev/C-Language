@@ -12,4 +12,6 @@ void main()
    z = y + 32 ;
    printf(" the fahrenheit tamperature is : %lf .",z);
 
+printf("----------------------------------------------------- \n ");
+ printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
 }
