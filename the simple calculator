@@ -31,4 +31,6 @@ void main()
         printf("invalid input ");
 
     }
+printf("----------------------------------------------------- \n ");
+ printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
 }
