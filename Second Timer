@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main( )
+{
+    int sec; // the second variable
+    printf("Enter second :");
+    scanf("%d",&sec);
+    for (sec;0<=sec;sec--)
+    {
+        printf("%d \r",sec); // \r is called for the remove old number and geting a new number number
+        sleep(1);
+    }
+    printf("----------------------------------------------------- \n ");
+    printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
+}
