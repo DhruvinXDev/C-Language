@@ -2,8 +2,8 @@
 
 void main()
 {
-    int c,m,u;
-    m=21;
+    int c,m,u; // c for computer input matchstick, m for total matchstick and u for user input matchstick
+    m=21; // total matchstick is 21
     printf("1. The game starts with 21 matchsticks.\n");
     printf("2. The user is asked to pick 1, 2, 3, or 4 matchsticks.\n");
     printf("3. After the user picks, the computer makes its pick.\n");
@@ -12,8 +12,8 @@ void main()
     {
          printf("Enter matchstick :");
          scanf("%d",&u);
-         c=5-u;
-         m=m-u-c;
+         c=5-u; // computer matchstick 
+         m=m-u-c; // Available matchstick
          printf("computer choose matchstick is %d \n",c);
          printf("Available matchstick is : %d \n",m);
          if(u>4)
