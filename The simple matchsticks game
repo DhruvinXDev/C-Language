@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+void main()
+{
+    int c,m,u;
+    m=21;
+    printf("1. The game starts with 21 matchsticks.\n");
+    printf("2. The user is asked to pick 1, 2, 3, or 4 matchsticks.\n");
+    printf("3. After the user picks, the computer makes its pick.\n");
+    printf("4. The player who is forced to pick the last matchstick loses the game.\n");
+    while(1)
+    {
+         printf("Enter matchstick :");
+         scanf("%d",&u);
+         c=5-u;
+         m=m-u-c;
+         printf("computer choose matchstick is %d \n",c);
+         printf("Available matchstick is : %d \n",m);
+         if(u>4)
+         {
+             printf("please enter valid matchstick 1 to 4.\n");
+             continue;
+         }
+     if(m==1)
+     {
+         printf("-------------------------------------------\n");
+         printf("You are loses the game.\n");
+         printf("-------------------------------------------\n");
+         break;
+     }
+
+    }
+      printf("-------------------------------------------\n");
+     printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
+}
