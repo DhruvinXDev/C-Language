@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+void main()
+{
+    int v,h;// v=vertically and h=horizontally
+    int x,y;
+    printf("Enter the size of table vertically :");
+    scanf("%d",&v);
+    printf("Enter the size of table horizontally :");
+    scanf("%d",&h);
+    for(x=1;x<=v;x++)
+    {
+        for(y=1;y<=h;y++)
+        {
+            printf("%3d ",y*x);
+        }
+        printf("\n");
+    }
+        printf("----------------------------------------------------- \n ");
+        printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
+
+}
+
