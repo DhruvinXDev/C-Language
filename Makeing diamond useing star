@@ -2,10 +2,10 @@
 
 void main()
 {
-    int num,num1,num2; //number for ending value
+    int num,num1,num2; 
     printf("Enter the value of row : ");
     scanf("%d",&num);
-    num2=(num/2);
+    num2=(num/2);   
     num1=(num/2)+1;
     for(int row1=1;row1<=num1;row1++) //this operation for row
     {
@@ -36,14 +36,14 @@ void main()
             printf(" ");
         }
 
-        for(int c5=1;c5<=(num2-row2+1);c5++ ) //this operation for print 2nd triangle
+        for(int c5=1;c5<=(num2-row2+1);c5++ ) //this operation for print 5th triangle
         {
 
             printf("*");
 
         }
 
-        for(int c6=1;c6<=(num2-row2);c6++) //this operation for print 3rd triangle
+        for(int c6=1;c6<=(num2-row2);c6++) //this operation for print 6th triangle
         {
 
             printf("*");
