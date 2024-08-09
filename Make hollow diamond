@@ -1,0 +1,84 @@
+#include<stdio.h>
+
+void main()
+{
+    int num,num1,num2; //number for ending value
+    printf("Enter the value of row : ");
+    scanf("%d",&num);
+    num2=(num/2);
+    num1=(num/2)+1;
+    for(int row1=1;row1<=num1;row1++) //this operation for row
+    {
+        for(int c1=1;c1<=num1-row1;c1++) //this operation for give space
+        {
+            printf(" ");
+        }
+
+        for(int c2=1;c2<=row1;c2++ ) //this operation for print 2nd triangle
+        {
+
+            if(c2==1)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+
+        }
+
+        for(int c3=1;c3<=row1-1;c3++) //this operation for print 3rd triangle
+        {
+
+           if(c3==(row1-1))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    for(int row2=1;row2<=num2;row2++)
+    {
+        for(int c4=1;c4<=row2;c4++) //this operation for give space
+        {
+            printf(" ");
+        }
+
+        for(int c5=1;c5<=(num2-row2+1);c5++ ) //this operation for print 2nd triangle
+        {
+
+           if(c5==1)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+
+        }
+
+        for(int c6=1;c6<=(num2-row2);c6++) //this operation for print 3rd triangle
+        {
+
+            if(c6==(num2-row2))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+
+        }
+        printf("\n");
+    }
+    printf("----------------------------------------------------- \n ");
+    printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
+
+}
