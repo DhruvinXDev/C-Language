@@ -7,6 +7,7 @@ void main()
     scanf("%d",&num);
     num2=(num/2);
     num1=(num/2)+1;
+    int z=1; //final row
     int x=1;
     char y='A';
     for(int row1=1;row1<=num1;row1++) //this operation for row
@@ -21,7 +22,7 @@ void main()
 
             if(c2==1)
             {
-                if(row1%2==0)
+                if(z%2==0)
                 {
                    printf("%d",x);
 
@@ -44,7 +45,7 @@ void main()
 
            if(c3==(row1-1))
             {
-              if(row1%2==0)
+              if(z%2==0)
                 {
                    printf("%d",x);
 
@@ -61,10 +62,16 @@ void main()
             }
         }
         printf("\n");
-        if(row1%2==0)
-            x++;
+
+        if(z%2==0)
+            {
+                x++;
+            }
         else
+        {
             y++;
+        }
+          z++;
     }
     for(int row2=1;row2<=num2;row2++)
     {
@@ -78,7 +85,7 @@ void main()
 
            if(c5==1)
             {
-                if(row2%2==0)
+                if(z%2==0)
                 {
                    printf("%d",x);
 
@@ -101,15 +108,15 @@ void main()
 
             if(c6==(num2-row2))
             {
-                if(row2%2==0)
+                if(z%2==0)
                 {
                    printf("%d",x);
-                   x++;
+
                 }
                 else
                 {
                     printf("%c",y);
-                    y++;
+
                 }
             }
             else
@@ -119,6 +126,15 @@ void main()
 
         }
         printf("\n");
+         if(z%2==0)
+            {
+                x++;
+            }
+        else
+        {
+            y++;
+        }
+        z++;
     }
     printf("----------------------------------------------------- \n ");
     printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
