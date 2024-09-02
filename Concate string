@@ -21,7 +21,7 @@ void main()
    }
    for(z=0;z<(l1+l2);z++)
    {
-       a[z]=c[z];
+       b[z]=a[z];
        if(z>=l1)
        {
            z=z-l1-1;
