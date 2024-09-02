@@ -1,0 +1,46 @@
+#include<stdio.h>
+void main()
+{
+    char a[100],c[100];
+    int x,l1=0,l2=0,y;
+
+        printf("Enter the first note for compare string :");
+        gets(a); // for note input
+
+   // calculating the length of a note
+   for(x=0;a[x]!='\0';x++)
+   {
+       l1++;
+   }
+
+       printf("Enter the 2nd note for compare string :");
+       gets(c);
+   for(y=0;c[y]!='\0';y++)
+   {
+       l2++;
+   }
+   if(l1!=l2)
+   {
+       printf("Enter string are different.");
+   }
+        else
+        {
+            for(x=0;x<l1;x++)
+            {
+                if(a[x]!=c[x])
+                {
+                    printf("Enter string are different.");
+                    break;
+                }
+
+
+            }
+            if(a[x]==c[x])
+            {
+               printf("Enter string are same.");
+            }
+
+        }
+
+
+}
