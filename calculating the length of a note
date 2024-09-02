@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+    char a[100],c[100];
+    int x,l1=0,l2=0,y;
+
+        printf("Enter the first note for compare string :");
+        gets(a); // for note input
+
+   // calculating the length of a note
+   for(x=0;a[x]!='\0';x++)
+   {
+       l1++;
+   }
+
+       printf("Your enter string length is %d.\n",l1);
+
+}
