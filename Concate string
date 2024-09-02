@@ -4,9 +4,9 @@
 void main()
 {
     char a[100],c[100],b[100];
-    int x,l1=0,l2=0,y,z;
+    int x,l1=0,l2=0,y,z,d,l;
 
-        printf("Enter the first note for compare string :");
+        printf("Enter the first note for string :");
         gets(a); // for note input
 
    // calculating the length of a note
@@ -15,22 +15,29 @@ void main()
        l1++;
    }
 
-       printf("Enter the 2nd note for compare string :");
+       printf("Enter the 2nd note for string :");
        gets(c);
    for(y=0;c[y]!='\0';y++)
    {
        l2++;
    }
-   for(z=0;z<(l1+l2);z++)
+   l=(l1+l2);
+//    for Concate two string 
+   for(z=0;z<l1;z++)
    {
+    
        b[z]=a[z];
-       if(z>=l1)
-       {
-           z=z-l1-1;
-           b[z]=c[z];
-       }
-
    }
+   for(d=z;d<l;d++)
+   {
+   
+    b[d]=c[d-z];
+   }
+   
+
+   b[d+1]='\0';
+   printf("The Concate string is : %s\n",b);
+
 printf("----------------------------------------------------- \n ");
     printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
 
