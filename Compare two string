@@ -1,4 +1,6 @@
 #include<stdio.h>
+/* host name : Dhruvin vaghasiya 
+   date :2/9/2024 */
 void main()
 {
     char a[100],c[100];
@@ -7,7 +9,7 @@ void main()
         printf("Enter the first note for compare string :");
         gets(a); // for note input
 
-   // calculating the length of a note
+   // calculating the length of a note 1
    for(x=0;a[x]!='\0';x++)
    {
        l1++;
@@ -15,6 +17,7 @@ void main()
 
        printf("Enter the 2nd note for compare string :");
        gets(c);
+// calculating the length of a note 2
    for(y=0;c[y]!='\0';y++)
    {
        l2++;
@@ -41,6 +44,9 @@ void main()
             }
 
         }
+
+  printf("----------------------------------------------------- \n ");
+    printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
 
 
 }
