@@ -1,0 +1,71 @@
+#include <stdio.h>
+/* host name : Dhruvin vaghasiya 
+   date :2/9/2024 */
+   
+void main() 
+{
+    int rs,x,r,c; //reserved seats 
+    //r for user input row
+    //c for user input column 
+    int r1[10] = {0,0,0,0,0,0,0,0,0,0};
+    int r2[10] = {0,0,0,0,0,0,0,0,0,0};
+    int r3[10] = {0,0,0,0,0,0,0,0,0,0};
+    int r4[10] = {0,0,0,0,0,0,0,0,0,0};
+    int r5[10] = {0,0,0,0,0,0,0,0,0,0};
+    printf("Enter the number of reserved seats:");
+    scanf("%d",&rs);
+   // printf("before for loop \n ");
+   for(x=0;x<rs;x++)
+    {
+        printf("Enter row and seat number for reserved seat %d (e.g.,2 5) :",x+1);
+        scanf("%d %d",&r,&c);
+        switch (r)
+        {
+            case 1:
+            r1[c-1]=1;
+            break;
+            case 2:
+            r2[c-1]=1;
+            break;
+            case 3:
+            r3[c-1]=1;
+            break;
+            case 4:
+            r4[c-1]=1;
+            break;
+            case 5:
+            r5[c-1]=1;
+            
+        }
+    }
+    //printf("%d \n %d",r,c);
+    for(int i=0;i<5;i++)
+    {
+        for(int j=0;j<10;j++)
+        {
+            switch (i+1)
+            {
+                case 1:
+                printf("%d ",r1[j]);
+                break;
+                case 2:
+                printf("%d ",r2[j]);
+                break;
+                case 3:
+                printf("%d ",r3[j]);
+                break;
+                case 4:
+                printf("%d ",r4[j]);
+                break;
+                case 5:
+                printf("%d ",r5[j]);
+                break;
+                
+            }
+            
+           
+        }
+        printf("\n");
+    }
+    
+}
