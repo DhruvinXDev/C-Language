@@ -1,0 +1,47 @@
+#include <stdio.h>
+/* host name : Dhruvin vaghasiya
+   date :6/9/2024 */
+
+void main()
+{
+    int rs,x,r,c; //reserved seats
+    //r for user input row
+    //c for user input column
+    char seat[10][10];
+     for(int i=0;i<10;i++)
+    {
+        for(int j=0;j<10;j++)
+        {
+
+            seat[i][j]='O';
+
+        }
+
+    }
+
+
+
+    printf("Enter the number of reserved seats:");
+    scanf("%d",&rs);
+   // printf("before for loop \n ");
+   for(x=0;x<rs;x++)
+    {
+        printf("Enter row and seat number for reserved seat %d (e.g.,2 5) :",x+1);
+        scanf("%d %d",&r,&c);
+       seat[r-1][c-1]='X';
+    }
+    //printf("%d \n %d",r,c);
+    for(int i=0;i<10;i++)
+    {
+        for(int j=0;j<10;j++)
+        {
+
+                printf("%c ",seat[i][j]);
+
+        }
+        printf("\n");
+    }
+ printf("----------------------------------------------------- \n ");
+        printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
+
+}
