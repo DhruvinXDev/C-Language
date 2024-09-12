@@ -3,14 +3,13 @@
    date :10/9/2024 */
 void main()
 {
-    
     int x,y,z,a,b,c,ans=0,num;
     //x,y,z,a,b and c is used for loop
     //ans use for shorting identfier if ans=0 it means no shorting else short's the name's.
     //num for total number of student
     printf("Enter Total Number Of Student :");
     scanf("%d",&num);
-    char name[num][100],ext[2][100];
+    char name[num][100],ext[100];
     //collect student name form the user.
 
     for(x=0;x<num;x++)
@@ -33,7 +32,7 @@ void main()
             }
             else if(name[y][a]<name[z][a])
             {
-              break; //for no swaping
+              break; //for no swap
             }
 
           }
@@ -42,11 +41,11 @@ void main()
           {
             for(b=0;name[y][b]!='\0';b++)
             {
-              ext[0][b]=name[y][b];
+              ext[b]=name[y][b];
             }
-            ext[0][b]='\0';//for include null value in the last
+            ext[b]='\0';//for include null value in the last
 
-            //removeing all the value in name[y][c].
+            //remove all the value in name[y][c].
             for(c=0;name[y][c]!='\0';c++)
             {
               name[y][c]='\0';
@@ -58,25 +57,25 @@ void main()
             }
             name[y][b]='\0';//for include null value in the last
 
-            //removeing all the value in name[z][c].
+            //remove all the value in name[z][c].
             for(c=0;name[z][c]!='\0';c++)
             {
               name[z][c]='\0';
             }
             
-            for(b=0;ext[0][b]!='\0';b++)
+            for(b=0;ext[b]!='\0';b++)
             {
-              name[z][b]=ext[0][b];
+              name[z][b]=ext[b];
             }
             name[z][b]='\0';//for include null value in the last
 
-            // removeing all the value in ext[0][c].
-            for(c=0;ext[0][c]!='\0';c++)
+            // remove all the value in ext[c].
+            for(c=0;ext[c]!='\0';c++)
             {
-              ext[0][c]='\0';
+              ext[c]='\0';
             }
           }
-          ans=0;//giveing initial value
+          ans=0;//give initial value
 
         }
     }
