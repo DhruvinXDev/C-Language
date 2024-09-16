@@ -55,7 +55,8 @@ void main( )
     ans=part4(grade,num);
     printf("The Average Grade Of The Students is :%f",ans);
 
-
+printf("----------------------------------------------------- \n ");
+ printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24CE137.");
 
 
 }
