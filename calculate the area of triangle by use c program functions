@@ -1,0 +1,47 @@
+#include<stdio.h>
+/* host name= dhruvin vaghasiya
+date=16/09/2024 */
+int part1(int l[]);
+
+
+void main( )
+{
+    int length[3],i,Va;
+    //i for loop
+    // va fro Verify ans
+    x:
+            for(i=0;i<3;i++)
+    {
+        printf("%d) length of triangle:",i+1);
+        scanf("%d",&length[i]);
+    }
+    va=part1(length);
+
+        if(va==1)
+        {
+            goto x;
+        }
+
+
+
+
+printf("----------------------------------------------------- \n ");
+ printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24CE137.");
+
+
+}
+int part1(int l[])
+{
+    if((l[0]+l[1])>l[2] || (l[1]+l[2])>l[0] || (l[2]+l[0])>l[1] )
+    {
+        printf("The given lengths are form a triangle.");
+        return 0;
+    }
+    else
+    {
+        printf("the given lengths are not form a triangle.");
+        return 1;
+    }
+}
+
+
