@@ -29,7 +29,7 @@ void main( )
     part3(grade,num);
 
     ans=part4(grade,num);
-    printf("The Average Grade Of The Students is :%.2f\n",ans);
+    printf(" \n \nThe Average Grade Of The Students is :%.2f\n",ans);
 
 printf("----------------------------------------------------- \n ");
  printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24CE137.");
@@ -50,9 +50,10 @@ int part2( )
 }
 void part3(float g[],int y)
 {
+    printf("\n \nStudent grade:\n");
     for(int i=0;i<y;i++)
     {
-        printf("%d) Student grade:%.2f\n",i+1,g[i]);
+        printf("%d) Student grade is:%.2f\n",i+1,g[i]);
     }
 }
 float part4(float g[],int y)
@@ -65,4 +66,3 @@ float part4(float g[],int y)
     x=x/y;
     return x;
 }
-
