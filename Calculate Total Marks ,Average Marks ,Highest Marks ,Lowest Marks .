@@ -1,0 +1,73 @@
+#include<stdio.h>
+#include<math.h>
+
+/* host name= dhruvin vaghasiya
+date=03/10/2024 */
+int part1(int m[],int);
+void part2(int ,int);
+void part3(int m[],int );
+
+
+void main( )
+{
+    int marks[100],num,i,tmarks;
+
+    printf("Enter the number of student's :");
+    scanf("%d",&num);
+    printf("Enter the CCP marks of the student's :\n");
+    for(i=0;i<num;i++)
+    {
+        printf("%d) Student marks :",i+1);
+        scanf("%d",&marks[i]);
+    }
+    tmarks=part1(marks,num);
+    printf("Total marks: %d\n",tmarks);
+    part2(tmarks,num);
+
+    part3(marks,num);
+    printf("Highest Marks: %d\n",marks[num-1]);
+    printf("Lowest Marks: %d\n",marks[0]);
+
+
+
+
+
+
+printf("----------------------------------------------------- \n ");
+ printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24CE137.");
+
+
+}
+int part1(int m[],int n)
+{
+    static int total;
+    int i;
+    for(i=0;i<n;i++)
+    {
+        total=total+m[i];
+    }
+    return total;
+
+}
+void part2(int m,int n)
+{
+    float arg= (float)m/n;
+    printf("Average Marks: %.2f\n",arg);
+}
+void part3(int m[],int n)
+{
+    int i,j,c;
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(m[i]>m[j])
+            {
+                c=m[i];
+                m[i]=m[j];
+                m[j]=c;
+            }
+        }
+    }
+
+}
