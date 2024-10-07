@@ -1,0 +1,28 @@
+#include <stdio.h>
+/* host: dhruvin vaghsiya
+date 08-10-2024*/
+
+void update(int *a,int *b) {
+    int x,y;
+    x=*a;
+    y=*b;
+    *a=x+y;
+    *b=x-y;
+    if(*b<0)
+    {
+        *b=-*b;
+    }
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d\n", a, b);
+
+printf("My name is dhruvin vaghasiya. \n My id number is :24CE137");
+
+    return 0;
+}
