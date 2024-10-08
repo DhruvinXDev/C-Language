@@ -1,0 +1,36 @@
+
+#include<stdio.h>
+int abc(int x)
+{
+    if(x<0)
+    {
+        x=-x;
+    }
+    return x;
+}
+
+
+
+int max(int a, int b)
+{
+    return a > b ? a : b;
+}
+
+int main()
+{
+    int n;
+    int i, j, k;
+
+    scanf("%d", &n);
+    // Complete the code to print the pattern.
+
+    for (i = 1; i < 2 * n; i++) {
+        for (j = 1; j < 2 * n; j++) {
+            k = max(abc(n - i), abc(n - j)) + 1;
+            printf("%d ", k);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
