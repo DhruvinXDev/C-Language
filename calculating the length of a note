@@ -16,6 +16,6 @@ void main()
    }
 
        printf("Your enter string length is %d.\n",l1);
-    printf("----------------------------------------------------- \n ");
-    printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
+    printf("----------------------------------------------------- \n");
+    printf("My Name Is Dhruvin Vaghasiya. \nMy Id Number Is 24CE137.");
 }
