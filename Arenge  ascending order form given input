@@ -34,5 +34,6 @@ void main()
          printf("The %d item price is %d\n",w+1,a[w]);
      }
 
-    
+    printf("----------------------------------------------------- \n ");
+    printf("My Name Is Dhruvin Vaghasiya. \nMy Id Number Is 24CE137.");
 }
