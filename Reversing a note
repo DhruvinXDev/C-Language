@@ -20,5 +20,7 @@ void main()
        }
        b[j]='\0';
        printf("%s",b);
+ printf("----------------------------------------------------- \n");
+    printf("My Name Is Dhruvin Vaghasiya. \nMy Id Number Is 24CE137.");
 
 }
