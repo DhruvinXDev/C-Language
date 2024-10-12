@@ -22,7 +22,7 @@ void main( )
 
         if(va==1)
         {
-            goto x;
+            goto x;//if given length is not satisfier than re-enter length
         }
 
 printf("----------------------------------------------------- \n ");
@@ -46,8 +46,8 @@ int part1(int l[])
 }
 void part2(int le[])
 {
-    float s=(float)(le[0]+le[1]+le[2])/2;
-    float A=sqrt(s*(s-le[0])*(s-le[1])*(s-le[2]));
+    float s=(float)(le[0]+le[1]+le[2])/2;//Heron's formula.
+    float A=sqrt(s*(s-le[0])*(s-le[1])*(s-le[2]));//Heron's formula.
     printf("the area of the triangle is : %.2f\n",A);
 
 }
