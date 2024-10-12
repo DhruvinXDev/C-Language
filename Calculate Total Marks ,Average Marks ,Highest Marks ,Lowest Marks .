@@ -1,13 +1,9 @@
 #include<stdio.h>
-
-
 /* host name= dhruvin vaghasiya
 date=03/10/2024 */
 int part1(int m[],int);
 void part2(int ,int);
 void part3(int m[],int );
-
-
 void main( )
 {
     int marks[100],num,i,tmarks;
@@ -26,8 +22,8 @@ void main( )
 
     part3(marks,num);
 
-printf("----------------------------------------------------- \n ");
- printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24CE137.");
+printf("----------------------------------------------------- \n");
+ printf("My Name Is Dhruvin Vaghasiya. \nMy Id Number Is 24CE137.");
 
 
 }
