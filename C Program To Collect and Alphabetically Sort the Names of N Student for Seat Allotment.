@@ -87,5 +87,5 @@ void main()
        printf("%3d) Student Name :%s\n",y+1,name[y]);
     }
     printf("----------------------------------------------------- \n");
-    printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
+    printf("My Name Is Dhruvin Vaghasiya. \nsMy Id Number Is 24CE137.");
 }
