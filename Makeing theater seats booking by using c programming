@@ -1,7 +1,6 @@
 #include <stdio.h>
 /* host name : Dhruvin vaghasiya
    date :6/9/2024 */
-
 void main()
 {
     int rs,x,r,c; //reserved seats
@@ -12,15 +11,9 @@ void main()
     {
         for(int j=0;j<10;j++)
         {
-
             seat[i][j]='O';
-
         }
-
     }
-
-
-
     printf("Enter the number of reserved seats:");
     scanf("%d",&rs);
    // printf("before for loop \n ");
@@ -35,13 +28,10 @@ void main()
     {
         for(int j=0;j<10;j++)
         {
-
                 printf("%c ",seat[i][j]);
-
         }
         printf("\n");
     }
- printf("----------------------------------------------------- \n ");
-        printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24TCEKSZ.");
-
+ printf("----------------------------------------------------- \n");
+        printf("My Name Is Dhruvin Vaghasiya. \nMy Id Number Is 24CE137.");
 }
