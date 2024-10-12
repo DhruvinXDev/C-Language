@@ -1,3 +1,4 @@
+/*
 #include<stdio.h>
 void main( )
 {
@@ -12,3 +13,30 @@ void main( )
     printf("----------------------------------------------------- \n ");
     printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24CE137.");
 }
+*/
+
+
+#include <stdio.h>
+#include <unistd.h> // for sleep function
+
+int main() {
+    int seconds;
+
+    // Ask user for the countdown time in seconds
+    printf("Enter the number of seconds to countdown: ");
+    scanf("%d", &seconds);
+
+    // Countdown loop
+    while (seconds > 0) {
+        printf("\r%d seconds remaining...", seconds); // '\r' moves the cursor to the beginning of the line
+        fflush(stdout); // Ensure the output is printed immediately
+        sleep(1); // Sleep for 1 second
+        seconds--; // Decrement the countdown
+    }
+
+    // When countdown reaches zero
+    printf("\rCountdown completed!          \n"); // Erase remaining characters from previous output
+
+    return 0;
+}
+
