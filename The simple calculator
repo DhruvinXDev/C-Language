@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+void main()
+{
+    int x,y;
+    char o;
+    printf("Enter The First Value :");
+    scanf("%d",&x);
+    printf("Enter The Second Value :");
+    scanf("%d",&y);
+    fflush(stdin);
+    printf("Enter One Arithmetic Operator From (+,-,/,*) :");
+    scanf("%c",&o);
+
+    switch (o)
+    {
+    case '+':
+        printf("Addition = %d \n", x+y);
+        break;
+    case '-':
+        printf("Substraction = %d \n", x-y);
+        break;
+    case '*':
+        printf("Multipliction = %d \n",x*y);
+        break;
+
+    case '/':
+        printf("Division = %d \n",x/y);
+        break;
+    default :
+        printf("Invalid Input ");
+
+    }
+printf("----------------------------------------------------- \n ");
+ printf("My Name Is Dhruvin Vaghasiya. \n My Id Number Is 24CE137.");
+}
