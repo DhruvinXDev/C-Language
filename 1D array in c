@@ -7,13 +7,13 @@ int main() {
       int a[n];
       for(int i=0;i<n;i++)
       {
-          scanf("%d",&a[i]);
+          scanf("%d) Enter the number : %d",i+1,&a[i]);
       }
       for(int i=0;i<n;i++)
       {
           c+=a[i];
       }
-      printf("%d\n",c);
+      printf("The total is :%d\n",c);
 printf("My name is dhruvin. \n My id is 24CE137.");
     return 0;
 }
