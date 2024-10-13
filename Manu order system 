@@ -1,0 +1,92 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+int choice, total=0,y;
+
+printf("Welcome foodies \n");
+
+printf("1. burger-150/-");
+
+printf("\n2. pizza=200/-");
+
+printf("\n3. pasta= 120/-");
+
+printf("\n4. sandwich-100/-");
+
+printf("\n5. french fries=80/-");
+
+printf("\no. finish your oder");
+
+y:printf("\nEnter the choice-"); scanf("%d", &choice);
+
+switch (choice)
+{
+case 1:
+printf("You select Burger\n");
+
+total+=150;
+
+goto y;
+
+break;
+
+case 2:
+
+printf("You select pizza\n");
+
+total+=200;
+
+goto y;
+
+break;
+case 3:
+
+printf("You select pasta\n");
+
+total +-120;
+
+goto y;
+
+break;
+
+case 4:
+
+printf("You select sandwich\n");
+
+total+=100;
+
+goto y;
+
+break;
+
+case 5:
+
+printf("You select french fries\n");
+
+total+-80;
+
+goto y;
+
+break;
+
+case 0:
+
+printf("\nyour total bill-%d", total);
+
+printf("\nThank you");
+
+break;
+
+defult:
+
+printf("\n please enter valide choice");
+
+}
+
+printf("\n---------------------: \n");
+
+printf("My Name Is Dhruvin Vaghasiya. \nMy Id Number Is 24CE137.");
+}
