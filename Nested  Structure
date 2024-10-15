@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<string.h>
+/*You are tasked with creating a system for managing sports teams in
+CHARUSAT. Each team consists of a team name, sport type (e.g., basketball,
+football), and a coach. Each coach has details such as name, age, and experience.
+Your program should:
+ Store information about multiple sports teams and their coaches.
+Allow the user to add, search, and display team and coach information.
+Hint: Use a nested structure where the team structure contains another structure
+for coach details.*/
+    /*host : Dhruvin vaghasiya
+    date : 15/10/1014*/
+
+void display();
+struct coach{
+    int age;
+    int exp;
+}c;
+struct team{
+    char tname[20];
+    char name[20];
+    char type[20];
+    struct coach c;
+}t;
+
+struct team t;
+void main()
+{
+
+    printf("Enter team name :");
+    fflush(stdin);
+    gets(t.tname);
+    printf("Enter Sport Type (e.g., basketball, football) :");
+    fflush(stdin);
+    gets(t.type);
+    printf("Enter team coach name :");
+    fflush(stdin);
+    gets(t.name);
+    printf("Enter Coach Age :");
+    scanf("%d",&t.c.age);
+    printf("Enter Coach experience :");
+    scanf("%d",&t.c.exp);
+
+
+    display();
+
+}
+void display()
+    {
+        printf("------------------------------------------------------\n");
+
+        printf("The Team name is : %s.\n",t.tname);
+        printf("The Team type is : %s.\n",t.type);
+
+        printf("The Coach name is : %s.\n",t.name);
+        printf("The coach age is : %d.\n",t.c.age);
+        printf("The coach experience is %d.\n",t.c.exp);
+        printf("------------------------------------------------------\nMy name is dhruvin vaghasiya.\nMy ID is : 24CE137.");
+}
