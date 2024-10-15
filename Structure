@@ -29,4 +29,5 @@ void display(char a[],char b[],float c)
         printf("The title of the book is : %s.\n",a);
         printf("The book Author name is : %s.\n",b);
         printf("The amount of the book is : %.2f ",c);
-    }
+        printf("------------------------------------------------------\nMy name is dhruvin vaghasiya.\nMy ID is : 24CE137.");
+}
