@@ -1,0 +1,39 @@
+ #include<stdio.h>
+ /*host : Dhruvin Vaghasiya
+ Date : 17/10/2024*/
+
+void main()
+{
+    int m[10],i;
+    static int d,f,p,fail;//d=DISTINCTION,f=FIRST CLASS,p=pass
+    int *ptr =m;
+    for (i=0;i<10;i++)
+    {
+        printf("%d) student ccp subject marks :",i+1);
+        scanf("%d",(ptr +i));
+        if(*(ptr+i)>70)
+        {
+            d++;//DISTINCTION
+        }
+        else if (*(ptr+i)>60)
+        {
+            f++;//FIRST CLASS
+        }
+        else if (*(ptr+i)>40)
+        {
+            p++;//pass
+        }
+        else
+        {
+            fail++;//fail
+        }
+    }
+    printf("-----------------------------\n");
+    printf("Total DISTINCTION number is : %d.\n",d);
+    printf("Total First Class number is :%d.\n",f);
+    printf("Total PASS number is :%d.\n",p);
+    printf("Total FAIL number is :%d.\n",fail);
+
+    printf("-----------------------------\n");
+    printf("My Name is Dhruvin Vaghasiya.\nMy ID Is :24CE137");
+}
