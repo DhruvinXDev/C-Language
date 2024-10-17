@@ -1,0 +1,27 @@
+ #include<stdio.h>
+ /*host : Dhruvin Vaghasiya
+ Date : 17/10/2024*/
+void ptr(int *,int *);
+void main()
+{
+    int a,b;
+    printf("Enter 1st ammount :");
+    scanf("%d",&a);
+    printf("Enter 2nd ammount :");
+    scanf("%d",&b);
+    ptr(&a,&b);
+    printf("-----------------------------\n");
+    printf("Your 1st ammount is :%d.\n",a);
+    printf("Your 2nd ammount is :%d.\n",b);
+
+    printf("-----------------------------\n");
+    printf("My Name is Dhruvin Vaghasiya.\nMy ID Is :24CE137");
+}
+void ptr(int *p1,int *p2)
+{
+
+    int t=*p1;
+    *p1=*p2;
+    *p2=t;
+
+}
