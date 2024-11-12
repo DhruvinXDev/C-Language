@@ -1,0 +1,28 @@
+/* host name = dhruvin vaghasiya 
+   date = 11/12/2024 */
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int n;
+    char *a;
+    printf("Enter string size :");
+    scanf("%d",&n);
+    a=(char *)calloc(n,1);
+
+    printf("Enter your string :");
+    scanf("%s",a);
+
+    printf("You'r string is :%s\n",a);
+    printf("Enter modify string size :");
+    scanf("%d",&n);
+    a=(char *)realloc(a,n);
+    printf("Enter your modify string :");
+    scanf("%s",a);
+    printf("You'r modify string is :");
+    puts(a);
+    free(a);
+    printf("-------------------------------------------------\n");
+    printf("My name is Dhruvin Vaghasiya.\nMY id is 24CE137.");
+
+}
