@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include<math.h>
+void main() {
+
+    float a,b,c,d,r1,r2;
+    printf("Enter Quadratic Equation 'a' :");
+    scanf("%f",&a);
+    printf("Enter Quadratic Equation 'b' :");
+    scanf("%f",&b);
+    printf("Enter Quadratic Equation 'c' :");
+    scanf("%f",&c);
+    d=(b*b) - (4*a*c);
+    if(d>0)
+    {
+        printf("Quadratic Equation have Two real root's .\n\n");
+        d=sqrt(d);
+        r1= (-b + d)/(2*a);
+        r2 = (-b - d)/(2*a);
+        printf("Quadratic Equation First root is = %.2f .\nQuadratic Equation Second root is = %.2f .\n",r1,r2);
+    }
+
+    else if(d==0)
+    {
+        printf("Quadratic Equation have One real root .\n\n");
+        d=sqrt(d);
+        r1=(-b)/(2*a);
+        printf("Quadratic Equation root is = %.2f .\n",r1);
+    }
+
+    else
+        printf("Quadratic Equation have not real root's .");
+
+    printf("\n------------------------------------------------");
+    printf("\nMy name is Dhruvin Vaghasiya.\nMy id is 24CE137.");
+
+
+}
