@@ -4,7 +4,7 @@
 
 void main()
 {
-    int n;
+    int n,w;
     printf("Enter numher of row:");
     scanf("%d",&n);
     
