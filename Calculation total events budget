@@ -3,7 +3,7 @@
 void main()
 {
     int day,cost,tday=0;
-    cost=200;//total cost
+    cost=200;//total cosT
 
     for (day=2;day<=100;day=day+2)
     {
