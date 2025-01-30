@@ -17,6 +17,7 @@ void main()
        l1++;
    }
 
+
        printf("Enter the 2nd note for compare string :");
        gets(c);
 // calculating the length of a note 2
