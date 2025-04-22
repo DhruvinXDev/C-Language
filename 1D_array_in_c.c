@@ -2,6 +2,7 @@
 date : 09-10-2024
 */
 
+
 #include <stdio.h>
 int main() {
       int n,c=0;// n for number given input c for sum of the all input
