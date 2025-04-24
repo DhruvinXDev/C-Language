@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 void main()
 {
     int num; //number for ending value
