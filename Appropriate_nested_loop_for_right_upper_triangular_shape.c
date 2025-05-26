@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+
 void main()
 {
     int row,cols,r,c;
