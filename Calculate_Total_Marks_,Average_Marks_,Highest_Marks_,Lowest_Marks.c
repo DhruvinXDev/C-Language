@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 /* host name= dhruvin vaghasiya
 date=03/10/2024 */
 int part1(int m[],int);
