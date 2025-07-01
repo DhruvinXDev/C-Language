@@ -1,6 +1,7 @@
 #include<stdio.h>
 /* host name : Dhruvin vaghasiya 
    date :10/9/2024 */
+
 void main()
 {
     int x,y,z,a,b,c,ans=0,num;
