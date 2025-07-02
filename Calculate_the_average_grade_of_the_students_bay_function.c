@@ -6,7 +6,6 @@ int part2( );
 void part3(float g[],int );
 float part4(float g[],int );
 
-
 void main( )
 {
     int num,i,j,k,n;
